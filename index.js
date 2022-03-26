@@ -1,23 +1,21 @@
 // Code your solutions in this file
-const message = [];
 
-function writeCards(name, event){
-for (i=0; i<name.length; i++){
-    
-message.push(`hello ${name[i]} join us at ${event}`); 
+nArr = ['name1', 'name2', 'name3']
 
+function writeCards(names, event){
+    let x;
+    let newArr = [];
+for (x=0; x<names.length ; x++){
+    let name = names[x]
+    newArr.push(`Thank you, ${name}, for the wonderful ${event} gift!`);
 }
-console.log(message);
-}
-
-writeCards (["carla", "jim", "dale"], "party time");
-
-//countdown
-
-function countDown (number){
-    while( number>0) {number--
-        console.log(number);
-    }
+return newArr;
 }
 
-countDown(17);
+function countDown(num){
+while (num>=0){
+console.log(num);
+num--;
+}
+}
+countDown(18);
